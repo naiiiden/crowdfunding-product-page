@@ -34,6 +34,7 @@ img {
   .main_background {
     background: url("../images/image-hero-desktop.jpg") no-repeat;
     background-size: 100% 100%;
+    height: 37.5%;
   }
 }
 
@@ -95,6 +96,43 @@ img {
   header nav .nav-ul li:nth-child(2) {
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 3rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 77.5%;
+    margin: auto;
+  }
+  header button {
+    display: none;
+  }
+  header nav .nav-ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2.5rem;
+  }
+  header nav .nav-ul li a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  header nav .nav-ul li a:hover {
+    border-bottom: 1px solid #7a7a7a;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
 }
 /*# sourceMappingURL=style.css.map */
