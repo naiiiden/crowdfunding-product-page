@@ -36,4 +36,65 @@ img {
     background-size: 100% 100%;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  header .logo_button_wrapper {
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 85%;
+    margin: auto;
+  }
+  header .logo_button_wrapper button {
+    background: none;
+    border: none;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  header nav .nav-ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    width: 0;
+    position: absolute;
+    top: -999rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: .3rem;
+  }
+  header nav .nav-ul.show {
+    top: 5rem;
+    width: 85%;
+    -webkit-transition: width .1s;
+    transition: width .1s;
+  }
+  header nav .nav-ul li {
+    padding: 1.5rem;
+  }
+  header nav .nav-ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  header nav .nav-ul li:nth-child(2) {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
 /*# sourceMappingURL=style.css.map */

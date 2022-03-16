@@ -1,0 +1,57 @@
+@media screen and (max-width: 1023px) {
+    header {
+        .logo_button_wrapper {
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            margin: auto;
+    
+            button {
+                background: none;
+                border: none;
+                display: grid;
+                place-content: center;
+            }
+        }
+    
+        nav {
+            .nav-ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                width: 0;
+                position: absolute;
+                top: -999rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border-radius: .3rem;
+    
+                &.show {
+                    top: 5rem;
+                    width: 85%;
+                    transition: width .1s;
+                }
+    
+                li {
+                    padding: 1.5rem;
+    
+                    a {
+                        color: $black;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                    }
+    
+                    &:nth-child(2) {
+                        border-top: 1px solid hsl(0, 0%, 90%);
+                        border-bottom: 1px solid hsl(0, 0%, 90%);
+                    }
+                }
+            }
+        }
+    }
+}
