@@ -16,6 +16,7 @@ body {
     min-height: 100vh;
     font-family: Commissioner, sans-serif;
     font-size: 16px;
+    background: #fafafa;
 }
 
 img {
@@ -45,3 +46,4 @@ img {
 
 @import "./header";
 @import "./main";
+@import "./progress";

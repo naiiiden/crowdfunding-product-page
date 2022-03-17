@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   font-family: Commissioner, sans-serif;
   font-size: 16px;
+  background: #fafafa;
 }
 
 img {
@@ -77,6 +78,7 @@ img {
     right: 0;
     margin: auto;
     border-radius: .3rem;
+    z-index: 99;
   }
   header nav .nav-ul.show {
     top: 5rem;
@@ -153,6 +155,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  border: 1px solid red;
 }
 
 main .main_logo {
@@ -283,5 +286,12 @@ main .buttons_wrapper .bookmarked path {
     -webkit-transition: .1s;
     transition: .1s;
   }
+}
+
+.progress {
+  border: 1px solid red;
+  width: 85%;
+  margin: 2rem auto 0 auto;
+  border-radius: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
