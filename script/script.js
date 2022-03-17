@@ -6,3 +6,12 @@ document.querySelector("button").addEventListener("click", () => {
         document.querySelector(".menu-icon").setAttribute("src", "images/icon-hamburger.svg");
     };
 });
+
+document.querySelector(".bookmark").addEventListener("click", () => {
+    document.querySelector(".bookmark").classList.toggle("bookmarked");
+    if (document.querySelector(".bookmark span").textContent == "Bookmark") {
+        document.querySelector(".bookmark span").textContent = "Bookmarked";
+    } else {
+        document.querySelector(".bookmark span").textContent = "Bookmark";
+    }
+});

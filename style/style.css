@@ -226,6 +226,18 @@ main .buttons_wrapper .bookmark path {
   transition: .1s;
 }
 
+main .buttons_wrapper .bookmarked circle {
+  fill: #147b74;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+main .buttons_wrapper .bookmarked path {
+  fill: #fff;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
 @media screen and (min-width: 1024px) {
   main {
     margin: 10rem auto 0 auto;
@@ -242,6 +254,11 @@ main .buttons_wrapper .bookmark path {
   main .buttons_wrapper .back {
     width: auto;
   }
+  main .buttons_wrapper .back:hover {
+    background: #147b74;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
   main .buttons_wrapper .bookmark {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,12 +270,18 @@ main .buttons_wrapper .bookmark path {
     background: #eeeeee;
     border-radius: 3rem;
     padding: 0 .75rem 0 0;
+    cursor: pointer;
   }
   main .buttons_wrapper .bookmark span {
     display: block;
     font-weight: bold;
     color: #7a7a7a;
     font-size: 1rem;
+  }
+  main .buttons_wrapper .bookmarked span {
+    color: #147b74;
+    -webkit-transition: .1s;
+    transition: .1s;
   }
 }
 /*# sourceMappingURL=style.css.map */
