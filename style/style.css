@@ -25,7 +25,7 @@ img {
   right: 0;
   z-index: -1;
   width: 100%;
-  height: 32.5%;
+  height: 18.25rem;
   background: url("../images/image-hero-mobile.jpg") no-repeat;
   background-size: 100% 100%;
 }
@@ -34,7 +34,7 @@ img {
   .main_background {
     background: url("../images/image-hero-desktop.jpg") no-repeat;
     background-size: 100% 100%;
-    height: 37.5%;
+    height: 23.25rem;
   }
 }
 
@@ -228,6 +228,7 @@ main .buttons_wrapper .bookmark path {
 
 @media screen and (min-width: 1024px) {
   main {
+    margin: 10rem auto 0 auto;
     width: 50%;
     padding: 1.5rem;
     gap: .5rem;
