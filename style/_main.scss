@@ -1,0 +1,111 @@
+main {
+    background: #fff;
+    width: 85%;
+    margin: 5rem auto 0 auto;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+    .main_logo {
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .text_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        bottom: 1.5rem;
+
+        h1 {
+            font-size: 1.25em;
+        }
+
+        p {
+            color: $dark-gray;
+        }
+    }
+
+    .buttons_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .back {
+            background: $moderate-cyan;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            height: 56px;
+            padding: 0 .75rem;
+            display: grid;
+            place-content: center;
+            border-radius: 3rem;
+            width: 70%;
+        }
+
+        .bookmark {
+            border: none;
+            background: transparent;
+
+            span {
+                display: none;
+            }
+
+            circle {
+                fill: #2f2f2f;
+                transition: .1s;
+            }
+
+            path {
+                fill: #b1b1b1;
+                transition: .1s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        width: 50%;
+        padding: 1.5rem;
+        gap: .5rem;
+
+        .text_wrapper {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        .buttons_wrapper {
+            .back {
+                width: auto;
+            }
+
+            .bookmark {
+                display: flex;
+                align-items: center;
+                gap: .75rem;
+                background: #eeeeee;
+                border-radius: 3rem;
+                padding: 0 .75rem 0 0;
+
+                span {
+                    display: block;
+                    font-weight: bold;
+                    color: $dark-gray;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
