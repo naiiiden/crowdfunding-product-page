@@ -1,0 +1,114 @@
+.about {
+    background: #fff;
+    width: 85%;
+    margin: 2rem auto 5rem auto;
+    padding: 2rem 1.5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid #eee;
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        color: $dark-gray;
+    }
+
+    .item {
+        border: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+        border-radius: .5rem;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            align-items: flex-start;
+        }
+
+        .pledge {
+            color: $moderate-cyan;
+            font-weight: 500;
+        }
+
+        .left {
+            color: $black;
+            font-weight: 700;
+            font-size: 1.75rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            span {
+                font-size: 1rem;
+                color: $dark-gray;
+                font-weight: 400;
+            }
+        }
+
+        button {
+            background: $moderate-cyan;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 3rem;
+            color: #fff;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        &.unavailable {
+            opacity: 40%;
+
+            button {
+                background: $dark-gray;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        width: 50%;
+        padding: 2rem;
+        gap: 2rem;
+
+        .item {
+            gap: 2rem;
+            padding: 2rem;
+
+            .wrapper {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                button {
+                    margin-top: 0;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        background: $dark-cyan;
+                        transition: .1s;
+                    }
+                }
+            }
+
+            &.unavailable {
+                user-select: none;
+
+                button {
+                    cursor: default;
+
+                    &:hover {
+                        background: $dark-gray;
+                    }
+                }
+            }
+        }
+    }
+}
