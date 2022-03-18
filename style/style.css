@@ -825,6 +825,11 @@ main .buttons_wrapper .bookmarked path {
 }
 
 @media screen and (min-width: 1024px) {
+  .selection_modal .selection_modal_content {
+    width: 40%;
+    height: 75%;
+    overflow-y: scroll;
+  }
   label:hover {
     color: #3cb4ac;
     -webkit-transition: .1s;

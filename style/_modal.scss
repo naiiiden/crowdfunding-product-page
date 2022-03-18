@@ -195,6 +195,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .selection_modal {
+        .selection_modal_content {
+            width: 40%;
+            height: 75%;
+            overflow-y: scroll;
+        }
+    }
+    
     label:hover {
         color: $moderate-cyan;
         transition: .1s;
