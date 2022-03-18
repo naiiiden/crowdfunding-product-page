@@ -103,8 +103,28 @@
             }
         }
     }
+
 }
 
+.unavailable {
+    user-select: none;
+    cursor: default;
+    opacity: 40%;
+
+    .label_container {
+        user-select: none;
+    }
+
+    label:hover {
+        cursor: default;
+        color: $black;
+    }
+
+    .label_container:hover input ~ .checkmark {
+        border: 1px solid rgb(224, 224, 224);
+    }
+    
+}
 .label_container {
     position: relative;
     padding-left: 2rem;

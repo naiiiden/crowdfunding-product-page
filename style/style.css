@@ -717,6 +717,31 @@ main .buttons_wrapper .bookmarked path {
   font-weight: 400;
 }
 
+.unavailable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+  opacity: 40%;
+}
+
+.unavailable .label_container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.unavailable label:hover {
+  cursor: default;
+  color: black;
+}
+
+.unavailable .label_container:hover input ~ .checkmark {
+  border: 1px solid #e0e0e0;
+}
+
 .label_container {
   position: relative;
   padding-left: 2rem;
