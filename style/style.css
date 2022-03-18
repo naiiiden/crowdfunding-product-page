@@ -829,6 +829,24 @@ main .buttons_wrapper .bookmarked path {
     width: 40%;
     height: 75%;
     overflow-y: scroll;
+    -webkit-animation: width .2s;
+            animation: width .2s;
+  }
+  @-webkit-keyframes width {
+    from {
+      width: 0;
+    }
+    to {
+      width: 40%;
+    }
+  }
+  @keyframes width {
+    from {
+      width: 0;
+    }
+    to {
+      width: 40%;
+    }
   }
   label:hover {
     color: #3cb4ac;

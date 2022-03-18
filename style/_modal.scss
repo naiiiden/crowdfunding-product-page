@@ -200,6 +200,17 @@
             width: 40%;
             height: 75%;
             overflow-y: scroll;
+            animation: width .2s;
+
+            @keyframes width {
+                from {
+                    width: 0;
+                }
+    
+                to {
+                    width: 40%;
+                }
+            }
         }
     }
     
