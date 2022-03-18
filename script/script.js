@@ -16,3 +16,18 @@ document.querySelector(".bookmark").addEventListener("click", () => {
         document.querySelector(".bookmark span").textContent = "Bookmark";
     }
 });
+
+let modal = document.querySelector(".selection_modal");
+let button = document.querySelector(".item button");
+button.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
+document.querySelector(".close_button").addEventListener("click", () => {
+    modal.style.display = "none";
+});
