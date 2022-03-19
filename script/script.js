@@ -106,6 +106,7 @@ document.querySelector(".black_edition_stand_submit").addEventListener("click", 
     document.querySelector(".after_selection_modal").style.display = "flex";
     backers += 1;
     document.querySelector(".backers").textContent = backers;
+    document.querySelector(".money small").textContent = `${parseInt(document.querySelector(".money small").textContent) + parseInt(document.querySelector(".black_edition_stand_value").value)}`;
 });
 document.querySelector(".bamboo_stand_submit").addEventListener("click", (e) => {
     e.preventDefault();
@@ -113,6 +114,7 @@ document.querySelector(".bamboo_stand_submit").addEventListener("click", (e) => 
     document.querySelector(".after_selection_modal").style.display = "flex";
     backers += 1;
     document.querySelector(".backers").textContent = backers;
+    document.querySelector(".money small").textContent = `${parseInt(document.querySelector(".money small").textContent) + parseInt(document.querySelector(".bamboo_stand_value").value)}`;
 });
 document.querySelector(".no_reward_submit").addEventListener("click", (e) => {
     e.preventDefault();
@@ -120,6 +122,7 @@ document.querySelector(".no_reward_submit").addEventListener("click", (e) => {
     document.querySelector(".after_selection_modal").style.display = "flex";
     backers += 1;
     document.querySelector(".backers").textContent = backers;
+    document.querySelector(".money small").textContent = `${parseInt(document.querySelector(".money small").textContent) + parseInt(document.querySelector(".no_reward_value").value)}`;
 });
 /* AFTER SELECTION MODAL - SUCCESS */
 
