@@ -563,7 +563,7 @@ main .buttons_wrapper .bookmarked path {
   }
 }
 
-.selection_modal {
+.selection_modal, .after_selection_modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -577,17 +577,11 @@ main .buttons_wrapper .bookmarked path {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.selection_modal .selection_modal_content {
+.selection_modal .after_selection_modal_content, .after_selection_modal .after_selection_modal_content {
   background: #fff;
-  width: 85%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border-radius: .5rem;
-  margin: auto;
-  padding: 1.5rem 1rem;
-  -webkit-animation: width .2s;
-          animation: width .2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +589,17 @@ main .buttons_wrapper .bookmarked path {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  border-radius: .5rem;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
   gap: 1.5rem;
+  -webkit-animation: width .2s;
+          animation: width .2s;
 }
 
 @-webkit-keyframes width {
@@ -616,7 +620,51 @@ main .buttons_wrapper .bookmarked path {
   }
 }
 
-.selection_modal .selection_modal_content .close_button_wrapper {
+.selection_modal .after_selection_modal_content p, .after_selection_modal .after_selection_modal_content p {
+  color: #7a7a7a;
+}
+
+.selection_modal .after_selection_modal_content button, .after_selection_modal .after_selection_modal_content button {
+  background: #3cb4ac;
+  color: #fff;
+  font-family: inherit;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 3rem;
+}
+
+.selection_modal .selection_modal_content, .after_selection_modal .selection_modal_content {
+  background: #fff;
+  width: 85%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: .5rem;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  -webkit-animation: width .2s;
+          animation: width .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+@keyframes width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.selection_modal .selection_modal_content .close_button_wrapper, .after_selection_modal .selection_modal_content .close_button_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,20 +676,20 @@ main .buttons_wrapper .bookmarked path {
           justify-content: space-between;
 }
 
-.selection_modal .selection_modal_content .close_button_wrapper button {
+.selection_modal .selection_modal_content .close_button_wrapper button, .after_selection_modal .selection_modal_content .close_button_wrapper button {
   border: none;
   background: none;
 }
 
-.selection_modal .selection_modal_content .close_button_wrapper button svg {
+.selection_modal .selection_modal_content .close_button_wrapper button svg, .after_selection_modal .selection_modal_content .close_button_wrapper button svg {
   opacity: .4;
 }
 
-.selection_modal .selection_modal_content p {
+.selection_modal .selection_modal_content p, .after_selection_modal .selection_modal_content p {
   color: #7a7a7a;
 }
 
-.selection_modal .selection_modal_content form {
+.selection_modal .selection_modal_content form, .after_selection_modal .selection_modal_content form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,7 +700,7 @@ main .buttons_wrapper .bookmarked path {
   gap: 1.5rem;
 }
 
-.selection_modal .selection_modal_content .option {
+.selection_modal .selection_modal_content .option, .after_selection_modal .selection_modal_content .option {
   border: 1px solid #e0e0e0;
   border-radius: .5rem;
   padding: 1.5rem;
@@ -666,7 +714,7 @@ main .buttons_wrapper .bookmarked path {
   gap: 1.5rem;
 }
 
-.selection_modal .selection_modal_content .option .radio_label_wrapper {
+.selection_modal .selection_modal_content .option .radio_label_wrapper, .after_selection_modal .selection_modal_content .option .radio_label_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,11 +724,11 @@ main .buttons_wrapper .bookmarked path {
   gap: .5rem;
 }
 
-.selection_modal .selection_modal_content .option .radio_label_wrapper label {
+.selection_modal .selection_modal_content .option .radio_label_wrapper label, .after_selection_modal .selection_modal_content .option .radio_label_wrapper label {
   font-weight: 700;
 }
 
-.selection_modal .selection_modal_content .option .radio_label_wrapper .label_wrapper {
+.selection_modal .selection_modal_content .option .radio_label_wrapper .label_wrapper, .after_selection_modal .selection_modal_content .option .radio_label_wrapper .label_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,12 +739,12 @@ main .buttons_wrapper .bookmarked path {
   gap: .25rem;
 }
 
-.selection_modal .selection_modal_content .option .radio_label_wrapper .label_wrapper span {
+.selection_modal .selection_modal_content .option .radio_label_wrapper .label_wrapper span, .after_selection_modal .selection_modal_content .option .radio_label_wrapper .label_wrapper span {
   color: #3cb4ac;
   font-weight: 500;
 }
 
-.selection_modal .selection_modal_content .option .left {
+.selection_modal .selection_modal_content .option .left, .after_selection_modal .selection_modal_content .option .left {
   color: black;
   font-weight: 700;
   font-size: 1.25rem;
@@ -709,13 +757,13 @@ main .buttons_wrapper .bookmarked path {
   gap: .5rem;
 }
 
-.selection_modal .selection_modal_content .option .left span {
+.selection_modal .selection_modal_content .option .left span, .after_selection_modal .selection_modal_content .option .left span {
   font-size: 1rem;
   color: #7a7a7a;
   font-weight: 400;
 }
 
-.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper {
+.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper, .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper, .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper, .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper {
   border-top: 1px solid #d4d4d4;
   padding-top: 1rem;
   display: none;
@@ -729,25 +777,25 @@ main .buttons_wrapper .bookmarked path {
   gap: 1rem;
 }
 
-.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper {
+.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper, .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper, .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper, .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: .75rem;
 }
 
-.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input {
+.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input, .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input, .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input, .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input {
   width: 45%;
 }
 
-.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="text"], .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="text"], .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="text"] {
+.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="text"], .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="text"], .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="text"], .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="text"], .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="text"], .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="text"] {
   border-radius: 3rem;
   border: 1px solid #e0e0e0;
   font-family: inherit;
   text-align: center;
 }
 
-.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="submit"], .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="submit"], .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="submit"] {
+.selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="submit"], .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="submit"], .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="submit"], .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="submit"], .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="submit"], .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="submit"] {
   background: #3cb4ac;
   font-family: inherit;
   font-weight: 500;
@@ -865,10 +913,8 @@ main .buttons_wrapper .bookmarked path {
 }
 
 @media screen and (min-width: 1024px) {
-  .selection_modal .selection_modal_content {
-    width: 40%;
-    height: 75%;
-    overflow-y: scroll;
+  .after_selection_modal .after_selection_modal_content {
+    width: 400px;
     -webkit-animation: width .2s;
             animation: width .2s;
   }
@@ -877,8 +923,31 @@ main .buttons_wrapper .bookmarked path {
       width: 0;
     }
     to {
-      width: 40%;
+      width: 400px;
     }
+  }
+  @keyframes width {
+    from {
+      width: 0;
+    }
+    to {
+      width: 400px;
+    }
+  }
+  .after_selection_modal .after_selection_modal_content button {
+    cursor: pointer;
+  }
+  .after_selection_modal .after_selection_modal_content button:hover {
+    background: #147b74;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  .selection_modal .selection_modal_content {
+    width: 40%;
+    height: 75%;
+    overflow-y: scroll;
+    -webkit-animation: width .2s;
+            animation: width .2s;
   }
   @keyframes width {
     from {

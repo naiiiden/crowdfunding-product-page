@@ -79,6 +79,9 @@ window.addEventListener("click", (e) => {
     if (e.target == document.querySelector(".selection_modal")) {
         document.querySelector(".selection_modal").style.display = "none";
     }
+    if (e.target == document.querySelector(".after_selection_modal")) {
+        document.querySelector(".after_selection_modal").style.display = "none";
+    }
 });
 /* CLOSE SELECTION MODAL WHEN CLICKED OUTSIDE IT */
 
@@ -94,3 +97,30 @@ document.querySelector(".close_button").addEventListener("click", () => {
     document.querySelector(".selection_modal").style.display = "none";
 });
 /* CLOSE THE SELECTION MODAL WHEN CLICKING THE CLOSE BUTTON */
+
+/* AFTER SELECTION MODAL - SUCCESS */
+document.querySelector(".black_edition_stand_submit").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".selection_modal").style.display = "none";
+    document.querySelector(".after_selection_modal").style.display = "flex";
+
+});
+document.querySelector(".bamboo_stand_submit").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".selection_modal").style.display = "none";
+    document.querySelector(".after_selection_modal").style.display = "flex";
+});
+document.querySelector(".no_reward_submit").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".selection_modal").style.display = "none";
+    document.querySelector(".after_selection_modal").style.display = "flex";
+});
+/* AFTER SELECTION MODAL - SUCCESS */
+
+/* CLOSE AFTER SELECTION MODAL */
+document.querySelector(".confirmation_button").addEventListener("click", () => {
+    document.querySelector(".after_selection_modal").style.display = "none";
+});
+/* CLOSE AFTER SELECTION MODAL */
+
+
