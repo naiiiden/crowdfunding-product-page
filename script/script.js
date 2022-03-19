@@ -99,21 +99,27 @@ document.querySelector(".close_button").addEventListener("click", () => {
 /* CLOSE THE SELECTION MODAL WHEN CLICKING THE CLOSE BUTTON */
 
 /* AFTER SELECTION MODAL - SUCCESS */
+let backers = 5007;
 document.querySelector(".black_edition_stand_submit").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".selection_modal").style.display = "none";
     document.querySelector(".after_selection_modal").style.display = "flex";
-
+    backers += 1;
+    document.querySelector(".backers").textContent = backers;
 });
 document.querySelector(".bamboo_stand_submit").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".selection_modal").style.display = "none";
     document.querySelector(".after_selection_modal").style.display = "flex";
+    backers += 1;
+    document.querySelector(".backers").textContent = backers;
 });
 document.querySelector(".no_reward_submit").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".selection_modal").style.display = "none";
     document.querySelector(".after_selection_modal").style.display = "flex";
+    backers += 1;
+    document.querySelector(".backers").textContent = backers;
 });
 /* AFTER SELECTION MODAL - SUCCESS */
 
