@@ -848,6 +848,12 @@ main .buttons_wrapper .bookmarked path {
       width: 40%;
     }
   }
+  .selection_modal .selection_modal_content .close_button_wrapper button:hover {
+    cursor: pointer;
+  }
+  .selection_modal .selection_modal_content .close_button_wrapper button:hover svg {
+    opacity: 1;
+  }
   label:hover {
     color: #3cb4ac;
     -webkit-transition: .1s;

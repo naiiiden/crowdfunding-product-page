@@ -211,6 +211,16 @@
                     width: 40%;
                 }
             }
+
+            .close_button_wrapper {
+                button:hover {
+                    cursor: pointer;
+                    
+                    svg {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
     
