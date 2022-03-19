@@ -107,6 +107,8 @@ document.querySelector(".black_edition_stand_submit").addEventListener("click", 
     backers += 1;
     document.querySelector(".backers").textContent = backers;
     document.querySelector(".money small").textContent = `${parseInt(document.querySelector(".money small").textContent) + parseInt(document.querySelector(".black_edition_stand_value").value)}`;
+    document.querySelector(".black_edition_left").textContent = parseInt(document.querySelector(".black_edition_left").textContent) - 1;
+    document.querySelector(".modal_black_edition_left").textContent = parseInt(document.querySelector(".modal_black_edition_left").textContent) - 1;
 });
 document.querySelector(".bamboo_stand_submit").addEventListener("click", (e) => {
     e.preventDefault();
@@ -115,7 +117,10 @@ document.querySelector(".bamboo_stand_submit").addEventListener("click", (e) => 
     backers += 1;
     document.querySelector(".backers").textContent = backers;
     document.querySelector(".money small").textContent = `${parseInt(document.querySelector(".money small").textContent) + parseInt(document.querySelector(".bamboo_stand_value").value)}`;
+    document.querySelector(".bamboo_stand_left").textContent = parseInt(document.querySelector(".bamboo_stand_left").textContent) - 1;
+    document.querySelector(".modal_bamboo_stand_left").textContent = parseInt(document.querySelector(".modal_bamboo_stand_left").textContent) - 1;
 });
+
 document.querySelector(".no_reward_submit").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".selection_modal").style.display = "none";

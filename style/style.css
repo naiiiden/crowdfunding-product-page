@@ -482,7 +482,6 @@ main .buttons_wrapper .bookmarked path {
 }
 
 .about .item .left {
-  color: black;
   font-weight: 700;
   font-size: 1.75rem;
   display: -webkit-box;
@@ -492,6 +491,10 @@ main .buttons_wrapper .bookmarked path {
       -ms-flex-align: center;
           align-items: center;
   gap: .5rem;
+}
+
+.about .item .left p {
+  color: black;
 }
 
 .about .item .left span {
@@ -745,7 +748,6 @@ main .buttons_wrapper .bookmarked path {
 }
 
 .selection_modal .selection_modal_content .option .left, .after_selection_modal .selection_modal_content .option .left {
-  color: black;
   font-weight: 700;
   font-size: 1.25rem;
   display: -webkit-box;
@@ -755,6 +757,10 @@ main .buttons_wrapper .bookmarked path {
       -ms-flex-align: center;
           align-items: center;
   gap: .5rem;
+}
+
+.selection_modal .selection_modal_content .option .left p, .after_selection_modal .selection_modal_content .option .left p {
+  color: black;
 }
 
 .selection_modal .selection_modal_content .option .left span, .after_selection_modal .selection_modal_content .option .left span {

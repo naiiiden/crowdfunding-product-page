@@ -38,12 +38,15 @@
         }
 
         .left {
-            color: $black;
             font-weight: 700;
             font-size: 1.75rem;
             display: flex;
             align-items: center;
             gap: .5rem;
+
+            p {
+                color: $black;
+            }
 
             span {
                 font-size: 1rem;

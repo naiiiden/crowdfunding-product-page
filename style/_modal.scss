@@ -127,13 +127,16 @@
             }
 
             .left {
-                color: $black;
                 font-weight: 700;
                 font-size: 1.25rem;
                 display: flex;
                 align-items: center;
                 gap: .5rem;
-    
+                
+                p {
+                    color: $black;
+                }
+
                 span {
                     font-size: 1rem;
                     color: $dark-gray;
