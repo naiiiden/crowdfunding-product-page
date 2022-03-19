@@ -123,4 +123,14 @@ document.querySelector(".confirmation_button").addEventListener("click", () => {
 });
 /* CLOSE AFTER SELECTION MODAL */
 
+/* PREVENT TEXT INPUT */
+document.querySelectorAll(".money_input").forEach(input => {
+    input.addEventListener("keypress", e => {
+        if (!/[0-9\/]+/.test(e.key)) { //PREVENTS FROM TYPING CHARACTERS WHICH ARE DIFFERENT THAN 0-9 AND .
+            e.preventDefault();
+        };
+    });
+});
+/* PREVENT TEXT INPUT */
+
 
