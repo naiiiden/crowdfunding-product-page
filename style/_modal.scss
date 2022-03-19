@@ -1,5 +1,5 @@
 .selection_modal {
-    display: flex; 
+    display: none; 
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -102,8 +102,42 @@
                 }
             }
         }
-    }
 
+        .no_reward_pledge_input_wrapper, .bamboo_stand_pledge_input_wrapper, .black_edition_stand_pledge_input_wrapper {
+            border-top: 1px solid rgb(212, 212, 212);
+            padding-top: 1rem;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .input_wrapper {
+                display: flex;
+                gap: .75rem;
+
+                input {
+                    width: 45%;
+
+                    &[type="text"] {
+                        border-radius: 3rem;
+                        border: 1px solid rgb(224, 224, 224);
+                        font-family: inherit;
+                        text-align: center;
+                    }
+
+                    &[type="submit"] {
+                        background: $moderate-cyan;
+                        font-family: inherit;
+                        font-weight: 500;
+                        color: #fff;
+                        border: none;
+                        padding: 1rem;
+                        border-radius: 3rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .unavailable {
@@ -215,9 +249,41 @@
             .close_button_wrapper {
                 button:hover {
                     cursor: pointer;
-                    
+
                     svg {
                         opacity: 1;
+                    }
+                }
+            }
+
+            .no_reward_pledge_input_wrapper, .bamboo_stand_pledge_input_wrapper, .black_edition_stand_pledge_input_wrapper {
+                border-top: none;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 1rem;
+    
+                .input_wrapper {
+                    gap: 1rem;
+    
+                    input {
+                        width: 45%;
+    
+                        &[type="text"] {
+                            &:hover, &:focus {
+                                outline: 0;
+                                border: 1px solid $moderate-cyan;
+                                transition: .1s;
+                            }
+                        }
+    
+                        &[type="submit"] {
+                            cursor: pointer;
+
+                            &:hover {
+                                background: $dark-cyan;
+                                transition: .1s;
+                            }
+                        }
                     }
                 }
             }
