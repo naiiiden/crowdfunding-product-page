@@ -30,6 +30,8 @@ document.querySelector(".bamboo_stand_button").addEventListener("click", () => {
         document.querySelector(".bamboo_stand_pledge_input_wrapper").style.display = "flex";
         document.querySelector(".black_edition_stand").style.border = "1px solid rgb(224, 224, 224)";
         document.querySelector(".black_edition_stand_pledge_input_wrapper").style.display = "none";
+        document.querySelector(".no_reward_pledge").style.border = "1px solid rgb(224, 224, 224)";
+        document.querySelector(".no_reward_pledge_input_wrapper").style.display = "none";
     }
 });
 document.querySelector(".black_edition_button").addEventListener("click", () => {
@@ -40,6 +42,8 @@ document.querySelector(".black_edition_button").addEventListener("click", () => 
         document.querySelector(".black_edition_stand_pledge_input_wrapper").style.display = "flex";
         document.querySelector(".bamboo_stand").style.border = "1px solid rgb(224, 224, 224)";
         document.querySelector(".bamboo_stand_pledge_input_wrapper").style.display = "none";
+        document.querySelector(".no_reward_pledge").style.border = "1px solid rgb(224, 224, 224)";
+        document.querySelector(".no_reward_pledge_input_wrapper").style.display = "none";
     }
 });
 /* SELECTION DEPENDING ON WHICH BUTTON IS CLICKED */
