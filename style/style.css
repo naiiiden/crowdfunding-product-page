@@ -94,8 +94,6 @@ img {
   header nav .nav-ul.show {
     top: 5rem;
     width: 85%;
-    -webkit-transition: width .1s;
-    transition: width .1s;
   }
   header nav .nav-ul li {
     padding: 1.5rem;
@@ -141,6 +139,8 @@ img {
     color: #fff;
     text-decoration: none;
     border-bottom: 1px solid transparent;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   header nav .nav-ul li a:hover {
     border-bottom: 1px solid #7a7a7a;
@@ -222,6 +222,8 @@ main .buttons_wrapper .back {
 main .buttons_wrapper .bookmark {
   border: none;
   background: transparent;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .buttons_wrapper .bookmark span {
@@ -230,26 +232,31 @@ main .buttons_wrapper .bookmark span {
 
 main .buttons_wrapper .bookmark circle {
   fill: #2f2f2f;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .buttons_wrapper .bookmark path {
   fill: #b1b1b1;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+main .buttons_wrapper .bookmarked {
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .buttons_wrapper .bookmarked circle {
   fill: #147b74;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 main .buttons_wrapper .bookmarked path {
   fill: #fff;
-  -webkit-transition: .1s;
-  transition: .1s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -267,11 +274,13 @@ main .buttons_wrapper .bookmarked path {
   }
   main .buttons_wrapper .back {
     width: auto;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   main .buttons_wrapper .back:hover {
     background: #147b74;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   main .buttons_wrapper .bookmark {
     display: -webkit-box;
@@ -546,11 +555,13 @@ main .buttons_wrapper .bookmarked path {
   .about .item .wrapper button {
     margin-top: 0;
     cursor: pointer;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .about .item .wrapper button:hover {
     background: #147b74;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .about .item.unavailable {
     -webkit-user-select: none;

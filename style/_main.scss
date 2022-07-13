@@ -52,6 +52,7 @@ main {
         .bookmark {
             border: none;
             background: transparent;
+            transition: .2s;
 
             span {
                 display: none;
@@ -59,24 +60,26 @@ main {
 
             circle {
                 fill: #2f2f2f;
-                transition: .1s;
+                transition: .2s;
             }
 
             path {
                 fill: #b1b1b1;
-                transition: .1s;
+                transition: .2s;
             }
         }
 
         .bookmarked {
+            transition: .2s;
+
             circle {
                 fill: #147b74;
-                transition: .1s;
+                transition: .2s;
             }
 
             path {
                 fill: #fff;
-                transition: .1s;
+                transition: .2s;
             }
         }
     }
@@ -102,10 +105,11 @@ main {
         .buttons_wrapper {
             .back {
                 width: auto;
-
+                transition: .2s;
+                
                 &:hover {
                     background: $dark-cyan;
-                    transition: .1s;
+                    transition: .2s;
                 }
             }
 

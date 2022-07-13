@@ -93,10 +93,11 @@
                 button {
                     margin-top: 0;
                     cursor: pointer;
-                    
+                    transition: .2s;
+
                     &:hover {
                         background: $dark-cyan;
-                        transition: .1s;
+                        transition: .2s;
                     }
                 }
             }
