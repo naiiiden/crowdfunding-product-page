@@ -715,7 +715,7 @@ main .buttons_wrapper .bookmarked path {
 }
 
 .selection_modal .selection_modal_content .option, .after_selection_modal .selection_modal_content .option {
-  border: 1px solid #e0e0e0;
+  border: 2px solid #e0e0e0;
   border-radius: .5rem;
   padding: 1.5rem;
   display: -webkit-box;
@@ -726,6 +726,8 @@ main .buttons_wrapper .bookmarked path {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .selection_modal .selection_modal_content .option .radio_label_wrapper, .after_selection_modal .selection_modal_content .option .radio_label_wrapper {
@@ -937,7 +939,7 @@ main .buttons_wrapper .bookmarked path {
   }
   @-webkit-keyframes width {
     from {
-      width: 0;
+      width: auto;
     }
     to {
       width: 400px;
@@ -945,7 +947,7 @@ main .buttons_wrapper .bookmarked path {
   }
   @keyframes width {
     from {
-      width: 0;
+      width: auto;
     }
     to {
       width: 400px;
@@ -953,11 +955,13 @@ main .buttons_wrapper .bookmarked path {
   }
   .after_selection_modal .after_selection_modal_content button {
     cursor: pointer;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .after_selection_modal .after_selection_modal_content button:hover {
     background: #147b74;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .selection_modal .selection_modal_content {
     width: 40%;
@@ -976,9 +980,13 @@ main .buttons_wrapper .bookmarked path {
   }
   .selection_modal .selection_modal_content .close_button_wrapper button:hover {
     cursor: pointer;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .selection_modal .selection_modal_content .close_button_wrapper button:hover svg {
     opacity: 1;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper {
     border-top: none;
@@ -996,20 +1004,22 @@ main .buttons_wrapper .bookmarked path {
   }
   .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input {
     width: 45%;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="text"]:hover, .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="text"]:focus, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="text"]:hover, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="text"]:focus, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="text"]:hover, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="text"]:focus {
     outline: 0;
     border: 1px solid #3cb4ac;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="submit"], .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="submit"], .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="submit"] {
     cursor: pointer;
   }
   .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type="submit"]:hover, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type="submit"]:hover, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type="submit"]:hover {
     background: #147b74;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
   }
   label:hover {
     color: #3cb4ac;
