@@ -2,10 +2,12 @@
 document.querySelector("button").addEventListener("click", () => {
     document.querySelector(".nav-ul").classList.toggle("show");
     document.querySelector(".menu_shadow").classList.toggle("overlay");
+    document.querySelector("button").ariaExpanded = "true";
     if (document.querySelector(".menu-icon").getAttribute("src") === "images/icon-hamburger.svg") {
         document.querySelector(".menu-icon").setAttribute("src", "images/icon-close-menu.svg");
     } else {
         document.querySelector(".menu-icon").setAttribute("src", "images/icon-hamburger.svg");
+        document.querySelector("button").ariaExpanded = "false";
     };
 });
 /* MOBILE NAVIGATION MENU */
