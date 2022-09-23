@@ -371,7 +371,7 @@ main .buttons_wrapper .bookmarked path {
 }
 .about .item .left span {
   font-size: 1rem;
-  color: hsl(0deg, 0%, 48%);
+  color: #575757;
   font-weight: 400;
 }
 .about .item button {
