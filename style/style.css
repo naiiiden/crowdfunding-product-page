@@ -157,9 +157,11 @@ main .buttons_wrapper {
   justify-content: space-between;
 }
 main .buttons_wrapper .back {
-  background: hsl(176deg, 50%, 47%);
+  border: none;
+  background: #2B827C;
   color: #fff;
-  text-decoration: none;
+  font-family: inherit;
+  cursor: pointer;
   font-weight: 500;
   height: 56px;
   padding: 0 0.75rem;
@@ -214,7 +216,7 @@ main .buttons_wrapper .bookmarked path {
     transition: 0.2s;
   }
   main .buttons_wrapper .back:hover {
-    background: hsl(176deg, 72%, 28%);
+    background: #205f5b;
     transition: 0.2s;
   }
   main .buttons_wrapper .bookmark {

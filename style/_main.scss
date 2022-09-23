@@ -37,9 +37,12 @@ main {
         justify-content: space-between;
 
         .back {
-            background: $moderate-cyan;
+            border: none;
+            // background: $moderate-cyan;
+            background: #2B827C;
             color: #fff;
-            text-decoration: none;
+            font-family: inherit;
+            cursor: pointer;
             font-weight: 500;
             height: 56px;
             padding: 0 .75rem;
@@ -108,7 +111,8 @@ main {
                 transition: .2s;
                 
                 &:hover {
-                    background: $dark-cyan;
+                    // background: $dark-cyan;
+                    background: #205f5b;
                     transition: .2s;
                 }
             }
