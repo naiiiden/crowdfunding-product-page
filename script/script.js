@@ -22,6 +22,16 @@ document.querySelector(".bookmark").addEventListener("click", () => {
 /* BOOKMARK */
 
 /* SELECTION DEPENDING ON WHICH BUTTON IS CLICKED */
+document.querySelector(".back").addEventListener("click", () => {
+    document.querySelector(".selection_modal").style.display = "flex";
+    document.querySelector("#pledge_with_no_reward").checked = true;
+    document.querySelector(".no_reward_pledge").style.border = "2px solid hsl(176, 50%, 47%)";
+    document.querySelector(".no_reward_pledge_input_wrapper").style.display = "flex";
+    document.querySelector(".black_edition_stand").style.border = "1px solid rgb(224, 224, 224)";
+    document.querySelector(".black_edition_stand_pledge_input_wrapper").style.display = "none";
+    document.querySelector(".bamboo_stand").style.border = "1px solid rgb(224, 224, 224)";
+    document.querySelector(".bamboo_stand_pledge_input_wrapper").style.display = "none";
+});
 document.querySelector(".bamboo_stand_button").addEventListener("click", () => {
     document.querySelector(".selection_modal").style.display = "flex";
     document.querySelector("#bamboo_stand_pledge").checked = true;
@@ -67,7 +77,7 @@ document.querySelector("#bamboo_stand_pledge").addEventListener("click", () => {
     document.querySelector(".no_reward_pledge").style.border = "1px solid rgb(224, 224, 224)";
     document.querySelector(".no_reward_pledge_input_wrapper").style.display = "none";
 });
-document.querySelector(".no-reward-pledge-btn").addEventListener("click", () => {
+document.querySelector("#pledge_with_no_reward").addEventListener("click", () => {
     document.querySelector("#pledge_with_no_reward").checked = true;
     document.querySelector(".no_reward_pledge").style.border = "2px solid hsl(176, 50%, 47%)";
     document.querySelector(".no_reward_pledge_input_wrapper").style.display = "flex";
@@ -88,13 +98,6 @@ window.addEventListener("click", (e) => {
     }
 });
 /* CLOSE SELECTION MODAL WHEN CLICKED OUTSIDE IT */
-
-/* OPEN SELECTION MODAL FROM "BACK THIS PROJECT" BUTTON */
-document.querySelector(".back").addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector(".selection_modal").style.display = "flex";
-});
-/* OPEN SELECTION MODAL FROM "BACK THIS PROJECT" BUTTON */
 
 /* CLOSE THE SELECTION MODAL WHEN CLICKING THE CLOSE BUTTON */
 document.querySelector(".close_button").addEventListener("click", () => {
