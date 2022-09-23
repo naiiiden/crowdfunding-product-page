@@ -356,7 +356,7 @@ main .buttons_wrapper .bookmarked path {
   align-items: flex-start;
 }
 .about .item .pledge {
-  color: hsl(176deg, 50%, 47%);
+  color: #2A7E79;
   font-weight: 500;
 }
 .about .item .left {
