@@ -273,7 +273,7 @@ main .buttons_wrapper .bookmarked path {
   border-bottom: 1px solid rgb(222, 222, 222);
 }
 .progress .statistics_wrapper .statistic span {
-  color: hsl(0deg, 0%, 48%);
+  color: #595959;
 }
 .progress progress {
   width: 100%;
