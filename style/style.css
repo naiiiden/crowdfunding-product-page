@@ -149,7 +149,7 @@ main .text_wrapper h1 {
   font-size: 1.25em;
 }
 main .text_wrapper p {
-  color: hsl(0deg, 0%, 48%);
+  color: #595959;
 }
 main .buttons_wrapper {
   width: 100%;
