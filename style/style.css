@@ -339,7 +339,7 @@ main .buttons_wrapper .bookmarked path {
   font-size: 1.25rem;
 }
 .about p {
-  color: hsl(0deg, 0%, 48%);
+  color: #595959;
 }
 .about .item {
   border: 1px solid #eee;
