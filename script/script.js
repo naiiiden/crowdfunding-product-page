@@ -67,7 +67,7 @@ document.querySelector("#bamboo_stand_pledge").addEventListener("click", () => {
     document.querySelector(".no_reward_pledge").style.border = "1px solid rgb(224, 224, 224)";
     document.querySelector(".no_reward_pledge_input_wrapper").style.display = "none";
 });
-document.querySelector("#pledge_with_no_reward").addEventListener("click", () => {
+document.querySelector(".no-reward-pledge-btn").addEventListener("click", () => {
     document.querySelector("#pledge_with_no_reward").checked = true;
     document.querySelector(".no_reward_pledge").style.border = "2px solid hsl(176, 50%, 47%)";
     document.querySelector(".no_reward_pledge_input_wrapper").style.display = "flex";
