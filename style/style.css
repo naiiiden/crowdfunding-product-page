@@ -792,7 +792,7 @@ fieldset .sr-only {
     transition: 0.2s;
   }
   label:hover {
-    color: hsl(176deg, 50%, 47%);
+    color: #2A7E79;
     transition: 0.1s;
     cursor: pointer;
   }

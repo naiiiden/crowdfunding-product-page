@@ -389,7 +389,8 @@ fieldset {
     }
     
     label:hover {
-        color: $moderate-cyan;
+        // color: $moderate-cyan;
+        color: #2A7E79;
         transition: .1s;
         cursor: pointer;
     }
