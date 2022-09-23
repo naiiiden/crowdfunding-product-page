@@ -160,7 +160,8 @@ fieldset {
 
                 span {
                     font-size: 1rem;
-                    color: $dark-gray;
+                    // color: $dark-gray;
+                    color: #575757;
                     font-weight: 400;
                 }
             }
@@ -189,7 +190,8 @@ fieldset {
                     }
 
                     &[type="submit"] {
-                        background: $moderate-cyan;
+                        // background: $moderate-cyan;
+                        background: #2B827E;
                         font-family: inherit;
                         font-weight: 500;
                         color: #fff;
@@ -288,7 +290,8 @@ fieldset {
     gap: .5rem;
 
     span {
-        color: $moderate-cyan;
+        // color: $moderate-cyan;
+        color: #2A7E79;
     }
 }
 
@@ -375,6 +378,7 @@ fieldset {
 
                             &:hover {
                                 background: $dark-cyan;
+                                background: #205f5b;
                                 transition: .2s;
                             }
                         }

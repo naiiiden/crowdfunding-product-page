@@ -585,7 +585,7 @@ fieldset .sr-only {
 }
 .selection_modal .selection_modal_content .option .left span, .after_selection_modal .selection_modal_content .option .left span {
   font-size: 1rem;
-  color: hsl(0deg, 0%, 48%);
+  color: #575757;
   font-weight: 400;
 }
 .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper, .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper, .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper, .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper {
@@ -610,7 +610,7 @@ fieldset .sr-only {
   text-align: center;
 }
 .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type=submit], .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type=submit], .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type=submit], .after_selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type=submit], .after_selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type=submit], .after_selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type=submit] {
-  background: hsl(176deg, 50%, 47%);
+  background: #2B827E;
   font-family: inherit;
   font-weight: 500;
   color: #fff;
@@ -709,7 +709,7 @@ fieldset .sr-only {
   gap: 0.5rem;
 }
 .text_wrapper span {
-  color: hsl(176deg, 50%, 47%);
+  color: #2A7E79;
 }
 
 @media screen and (min-width: 1024px) {
@@ -788,6 +788,7 @@ fieldset .sr-only {
   }
   .selection_modal .selection_modal_content .no_reward_pledge_input_wrapper .input_wrapper input[type=submit]:hover, .selection_modal .selection_modal_content .bamboo_stand_pledge_input_wrapper .input_wrapper input[type=submit]:hover, .selection_modal .selection_modal_content .black_edition_stand_pledge_input_wrapper .input_wrapper input[type=submit]:hover {
     background: hsl(176deg, 72%, 28%);
+    background: #205f5b;
     transition: 0.2s;
   }
   label:hover {
