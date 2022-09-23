@@ -387,7 +387,7 @@ main .buttons_wrapper .bookmarked path {
   opacity: 40%;
 }
 .about .item.unavailable button {
-  background: hsl(0deg, 0%, 48%);
+  background: #595959;
 }
 
 @media screen and (min-width: 1024px) {
@@ -424,7 +424,7 @@ main .buttons_wrapper .bookmarked path {
     cursor: default;
   }
   .about .item.unavailable button:hover {
-    background: hsl(0deg, 0%, 48%);
+    background: #595959;
   }
 }
 .selection_modal, .after_selection_modal {
