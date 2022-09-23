@@ -125,14 +125,14 @@ main {
                 span {
                     display: block;
                     font-weight: bold;
-                    color: $dark-gray;
+                    color: #4F4F4F;
                     font-size: 1rem;
                 }
             }
 
             .bookmarked {
                 span {
-                    color: $dark-cyan;
+                    color: #0D5952;
                     transition: .1s;
                 }
             }
