@@ -427,6 +427,25 @@ main .buttons_wrapper .bookmarked path {
     background: #595959;
   }
 }
+fieldset {
+  border: none;
+}
+fieldset .option {
+  margin-bottom: 1.5rem;
+}
+fieldset .option:nth-last-child(1) {
+  margin-bottom: unset;
+}
+fieldset .sr-only {
+  position: absolute;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: transparent;
+}
+
 .selection_modal, .after_selection_modal {
   display: none;
   position: fixed;
@@ -521,7 +540,7 @@ main .buttons_wrapper .bookmarked path {
   opacity: 0.4;
 }
 .selection_modal .selection_modal_content p, .after_selection_modal .selection_modal_content p {
-  color: hsl(0deg, 0%, 48%);
+  color: #595959;
 }
 .selection_modal .selection_modal_content form, .after_selection_modal .selection_modal_content form {
   display: flex;

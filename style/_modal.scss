@@ -1,3 +1,22 @@
+fieldset {
+    border: none;
+
+    .option {
+        margin-bottom: 1.5rem;
+
+        &:nth-last-child(1) {
+            margin-bottom: unset;
+        }
+    }
+
+    .sr-only {
+        position: absolute;
+        opacity: 0;
+        user-select: none;
+        color: transparent;
+    }
+}
+
 .selection_modal, .after_selection_modal {
     display: none; 
     position: fixed; 
@@ -88,7 +107,8 @@
         }
 
         p {
-            color: $dark-gray;
+            // color: $dark-gray;
+            color: #595959;
         }
 
         form {
