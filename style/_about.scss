@@ -58,7 +58,8 @@
         }
 
         button {
-            background: $moderate-cyan;
+            // background: $moderate-cyan;
+            background: #2B827E;
             border: none;
             padding: 1rem 1.5rem;
             border-radius: 3rem;
@@ -98,7 +99,8 @@
                     transition: .2s;
 
                     &:hover {
-                        background: $dark-cyan;
+                        // background: $dark-cyan;
+                        background: #205f5b;
                         transition: .2s;
                     }
                 }

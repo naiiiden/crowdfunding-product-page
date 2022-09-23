@@ -375,7 +375,7 @@ main .buttons_wrapper .bookmarked path {
   font-weight: 400;
 }
 .about .item button {
-  background: hsl(176deg, 50%, 47%);
+  background: #2B827E;
   border: none;
   padding: 1rem 1.5rem;
   border-radius: 3rem;
@@ -411,7 +411,7 @@ main .buttons_wrapper .bookmarked path {
     transition: 0.2s;
   }
   .about .item .wrapper button:hover {
-    background: hsl(176deg, 72%, 28%);
+    background: #205f5b;
     transition: 0.2s;
   }
   .about .item.unavailable {
