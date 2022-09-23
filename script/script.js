@@ -3,11 +3,13 @@ document.querySelector("button").addEventListener("click", () => {
     document.querySelector(".nav-ul").classList.toggle("show");
     document.querySelector(".menu_shadow").classList.toggle("overlay");
     document.querySelector("button").ariaExpanded = "true";
+    document.querySelector("button").ariaLabel = "Close menu"
     if (document.querySelector(".menu-icon").getAttribute("src") === "images/icon-hamburger.svg") {
         document.querySelector(".menu-icon").setAttribute("src", "images/icon-close-menu.svg");
     } else {
         document.querySelector(".menu-icon").setAttribute("src", "images/icon-hamburger.svg");
         document.querySelector("button").ariaExpanded = "false";
+        document.querySelector("button").ariaLabel = "Open menu";
     };
 });
 /* MOBILE NAVIGATION MENU */
