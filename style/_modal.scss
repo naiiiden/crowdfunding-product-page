@@ -55,11 +55,13 @@ fieldset {
         }
 
         p {
-            color: $dark-gray;
+            // color: $dark-gray;
+            color: #595959;
         }
 
         button {
-            background: $moderate-cyan;
+            // background: $moderate-cyan;
+            background: #2B827E;
             color: #fff;
             font-family: inherit;
             padding: 1rem 2rem;
@@ -316,7 +318,8 @@ fieldset {
                 transition: .2s;
 
                 &:hover {
-                    background: $dark-cyan;
+                    // background: $dark-cyan;
+                    background: #205f5b;
                     transition: .2s;
                 }
             }

@@ -47,7 +47,8 @@
         appearance: none;
 
         &::-webkit-progress-value {
-            background-color: $moderate-cyan;
+            // background-color: $moderate-cyan;
+            background-color: #2B827E;
             border-radius: 5rem;
         }
 
